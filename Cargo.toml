@@ -1,0 +1,15 @@
+[package]
+name = "sleek_csv"
+version = "0.1.0"
+authors = ["Pyry Kontio <pyry.kontio@drasa.eu>"]
+edition = "2018"
+description = "A nice wrapper for CSV-core."
+license = "MIT"
+
+[dependencies]
+csv-core = "0.1.6"
+serde = { version = "1.0.103", optional = true }
+
+[dev-dependencies]
+serde = { version = "1.0.103", features = ["derive"] }
+arrayvec = "0.5.1"
